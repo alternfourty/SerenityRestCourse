@@ -3,7 +3,9 @@ pipeline {
     environment {
         appName = "Serenity_Jenkins"
         GRADLE_HOME = tool 'Gradle'
-        jdk = 'temurin-11'
+    }
+    tools {
+        jdk = 'JDK11'
     }
     stages {
         stage('Stage 1 - Build') {
