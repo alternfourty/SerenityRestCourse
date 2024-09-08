@@ -5,7 +5,7 @@ pipeline {
         GRADLE_HOME = tool 'Gradle'
     }
     tools {
-        jdk = 'JDK11'
+        jdk 'JDK11'
     }
     stages {
         stage('Stage 1 - Build') {
